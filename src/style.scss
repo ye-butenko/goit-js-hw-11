@@ -1,0 +1,40 @@
+.gallery {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.photo-card {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+
+  overflow: hidden;
+  transition: box-shadow 350ms ease-in-out;
+
+  &:hover {
+    box-shadow: 2px 1px 3px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+  font-size: 12px;
+  text-align: center;
+  color: #464646;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
